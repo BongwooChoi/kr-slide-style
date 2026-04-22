@@ -1,0 +1,319 @@
+/* KB금융 스타일 — Yellow(#FFBC00) 기반 */
+:root {
+  --kb-yellow: #FFBC00;
+  --kb-yellow-neg: #FFCC00;
+  --kb-orange: #F38530;
+  --kb-gray: #60584C;
+  --kb-dark-gray: #545045;
+  --kb-brown: #776C61;
+  --kb-row-light: #F2EEEA;
+  --kb-row-highlight: #FFF2CC;
+  --kb-text: #000000;
+  --kb-text-sub: #404041;
+  --kb-border: #CCCCCC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 380px;
+  font-family: 'Malgun Gothic', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #FFFFFF;
+  color: var(--kb-text);
+}
+
+.container {
+  padding: 0;
+  /* KB 템플릿의 둥근 사각형 프레임 느낌 */
+  border: 1.5px solid var(--kb-yellow);
+  border-radius: 10px;
+  margin: 8px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+/* 헤더 — 흰 배경 + KB Yellow 하단 테두리 */
+.header {
+  background: #FFFFFF;
+  padding: 14px 18px;
+  text-align: left;
+  margin-bottom: 0;
+  position: relative;
+  border-bottom: 2px solid var(--kb-yellow);
+}
+
+.header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--kb-text);
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: var(--kb-dark-gray);
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* 컨텐츠 영역 */
+.container > *:not(.header) {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.container > .header + *:not(.hidden) {
+  padding-top: 12px;
+}
+
+/* Status Bar */
+.status-bar {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 12px 14px 0;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.status-bar.success {
+  background: var(--kb-row-highlight);
+  color: var(--kb-text);
+  border-left: 3px solid var(--kb-yellow);
+}
+
+.status-bar.error {
+  background: #FFEBEE;
+  color: #C62828;
+  border-left: 3px solid #C62828;
+}
+
+.status-bar.info {
+  background: var(--kb-row-light);
+  color: var(--kb-text);
+  border-left: 3px solid var(--kb-orange);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Style Grid */
+.style-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin: 0 0 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.style-grid::-webkit-scrollbar {
+  width: 5px;
+}
+
+.style-grid::-webkit-scrollbar-thumb {
+  background: var(--kb-yellow);
+  border-radius: 4px;
+}
+
+.style-grid::-webkit-scrollbar-track {
+  background: var(--kb-row-light);
+}
+
+.style-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border: 1px solid var(--kb-border);
+  border-radius: 6px;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.style-card:hover {
+  border-color: var(--kb-yellow);
+  background: var(--kb-row-light);
+}
+
+.style-card.selected {
+  border-color: var(--kb-yellow);
+  background: var(--kb-row-highlight);
+  box-shadow: 0 0 0 1px var(--kb-yellow);
+}
+
+.style-card .color-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.style-card .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.style-card .card-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--kb-text);
+  text-align: left;
+}
+
+.style-card .card-name-en {
+  font-size: 9px;
+  color: var(--kb-dark-gray);
+  text-align: left;
+}
+
+.style-card .check-icon {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 12px;
+  color: var(--kb-orange);
+  font-weight: 700;
+  display: none;
+}
+
+.style-card.selected .check-icon {
+  display: block;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* KB Primary — Yellow 배경 + 블랙 텍스트 (KB 콘텐츠 제목 바 스타일) */
+.btn-primary {
+  background: var(--kb-yellow);
+  color: var(--kb-text);
+  border: 1px solid var(--kb-yellow);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: var(--kb-yellow-neg);
+  border-color: var(--kb-yellow-neg);
+}
+
+/* KB Secondary — 연한 베이지 배경 */
+.btn-secondary {
+  background: var(--kb-row-light);
+  color: var(--kb-text);
+  border: 1px solid var(--kb-border);
+}
+
+.btn-secondary:not(:disabled):hover {
+  background: var(--kb-row-highlight);
+  border-color: var(--kb-yellow);
+}
+
+/* Preview */
+.preview-section {
+  border-top: 1px solid var(--kb-yellow);
+  padding: 10px 0 12px;
+  margin-top: 4px;
+}
+
+.preview-section h3 {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--kb-text);
+  letter-spacing: -0.2px;
+}
+
+.preview-colors {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.preview-colors .color-chip {
+  width: 34px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.preview-text {
+  font-size: 10px;
+  color: var(--kb-text-sub);
+  line-height: 1.5;
+  max-height: 110px;
+  overflow-y: auto;
+  background: var(--kb-row-light);
+  padding: 8px 10px;
+  border-radius: 4px;
+  border-left: 3px solid var(--kb-yellow);
+  white-space: pre-wrap;
+}
+
+/* Footer — KB Brown(#776C61) 둥근 모서리 마커 재현 */
+.footer {
+  text-align: right;
+  padding: 6px 10px 10px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 14px;
+  background: var(--kb-brown);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.footer p {
+  font-size: 9px;
+  color: var(--kb-dark-gray);
+  font-weight: 500;
+}

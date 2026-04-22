@@ -1,0 +1,54 @@
+/* KB금융 스타일 — 드롭다운 / 알림 */
+
+/* 드롭다운 항목 호버 — KB 강조 행 색상 */
+.krstyle-item:hover {
+  background: #FFF2CC !important;
+}
+
+.krstyle-item:active {
+  background: #F2EEEA !important;
+}
+
+/* ─── 알림 토스트 ─── */
+.krstyle-notify {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 9999999;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: pre-line;
+  text-align: center;
+  font-family: 'Malgun Gothic', 'Google Sans', Roboto, sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  border-left: 4px solid;
+}
+
+.krstyle-notify-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.krstyle-notify-success {
+  background: #FFF2CC;
+  color: #000000;
+  border-left-color: #FFBC00;
+}
+
+.krstyle-notify-warning {
+  background: #FFF2CC;
+  color: #000000;
+  border-left-color: #F38530;
+}
+
+.krstyle-notify-error {
+  background: #FFEBEE;
+  color: #C62828;
+  border-left-color: #C62828;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>슬라이드 스타일 선택</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🎨 한국 기업 슬라이드 스타일</h1>
+      <p class="subtitle">NotebookLM 슬라이드 스타일 템플릿</p>
+    </header>
+
+    <div id="status-bar" class="status-bar hidden">
+      <span id="status-text"></span>
+    </div>
+
+    <div class="style-grid" id="styleGrid">
+      <!-- 동적으로 생성됨 -->
+    </div>
+
+    <div class="actions">
+      <button id="btnApply" class="btn btn-primary" disabled>
+        선택한 스타일 적용
+      </button>
+      <button id="btnCopy" class="btn btn-secondary" disabled>
+        📋 지침 복사
+      </button>
+    </div>
+
+    <div class="preview-section hidden" id="previewSection">
+      <h3>미리보기</h3>
+      <div class="preview-colors" id="previewColors"></div>
+      <div class="preview-text" id="previewText"></div>
+    </div>
+
+    <footer class="footer">
+      <p>슬라이드 생성 화면의 🎨 한국 기업 스타일 버튼도 사용 가능</p>
+    </footer>
+  </div>
+
+  <script src="styles.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

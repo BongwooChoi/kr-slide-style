@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 — 한국 기업 슬라이드 스타일</title>
+  <style>
+    body {
+      font-family: 'Malgun Gothic', 'Segoe UI', -apple-system, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      background: #fff;
+    }
+    header {
+      border-bottom: 2px solid #FFBC00;
+      padding-bottom: 16px;
+      margin-bottom: 28px;
+    }
+    h1 { font-size: 22px; margin: 0 0 6px; }
+    .sub { font-size: 13px; color: #666; }
+    h2 {
+      font-size: 16px;
+      margin: 28px 0 8px;
+      padding-left: 10px;
+      border-left: 4px solid #FFBC00;
+    }
+    p, li { font-size: 14px; color: #333; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    code {
+      background: #F2EEEA;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+    .box {
+      background: #FFF2CC;
+      border-left: 4px solid #FFBC00;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 14px 0;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      font-size: 12px;
+      color: #888;
+    }
+    a { color: #0066B3; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>개인정보 처리방침</h1>
+    <div class="sub">확장 프로그램명: <strong>한국 기업 슬라이드 스타일</strong></div>
+    <div class="sub">최종 업데이트: 2026년 4월</div>
+  </header>
+
+  <div class="box">
+    <strong>요약:</strong> 이 확장 프로그램은 사용자의 어떠한 개인정보도 수집하거나 외부로 전송하지 않습니다.
+  </div>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>본 확장 프로그램은 다음의 어떠한 사용자 데이터도 <strong>수집하지 않습니다</strong>:</p>
+  <ul>
+    <li>개인 식별 정보 (이름, 이메일, 주소 등)</li>
+    <li>건강 정보</li>
+    <li>금융 및 결제 정보</li>
+    <li>인증 정보 (비밀번호, 보안 질문 등)</li>
+    <li>개인적인 커뮤니케이션 (이메일, 채팅 등)</li>
+    <li>위치 정보</li>
+    <li>웹 기록 (방문 페이지 목록 등)</li>
+    <li>사용자 활동 (클릭, 마우스 위치, 키 입력 등)</li>
+    <li>웹사이트 콘텐츠 (텍스트, 이미지 등)</li>
+  </ul>
+
+  <h2>2. 로컬 저장소 사용</h2>
+  <p>
+    사용자 편의를 위해 Chrome 확장 프로그램의
+    <code>chrome.storage.local</code> API를 사용하여 다음 정보를 사용자의 로컬 기기에만 저장합니다:
+  </p>
+  <ul>
+    <li>사용자가 마지막으로 선택한 기업 스타일의 식별자 (예: <code>samsung</code>, <code>kb</code> 등)</li>
+  </ul>
+  <p>
+    이 데이터는 <strong>사용자의 기기를 떠나지 않으며</strong>, 외부 서버·제3자·개발자에게
+    전송되거나 공유되지 않습니다. 사용자는 브라우저의 확장 프로그램 관리 화면에서
+    언제든 해당 데이터를 삭제할 수 있습니다(확장 제거 시 자동 삭제).
+  </p>
+
+  <h2>3. 제3자 서비스 및 외부 통신</h2>
+  <p>
+    본 확장 프로그램은 외부 서버와 통신하지 않으며, 어떠한 제3자 분석 도구, 광고 네트워크,
+    추적 서비스도 사용하지 않습니다. 모든 기능은 사용자의 브라우저 내에서만 실행됩니다.
+  </p>
+
+  <h2>4. 권한 사용 목적</h2>
+  <ul>
+    <li><code>activeTab</code>: 사용자가 확장 아이콘을 클릭한 현재 탭(NotebookLM)의 슬라이드 지침 입력 필드에 텍스트를 삽입하기 위해 사용합니다.</li>
+    <li><code>storage</code>: 위 "2. 로컬 저장소 사용"에 명시된 목적으로만 사용합니다.</li>
+    <li><code>scripting</code>: NotebookLM 페이지에 스타일 입력 스크립트를 주입하여 기능을 실행하기 위해 사용합니다.</li>
+    <li><code>host_permissions (https://notebooklm.google.com/*)</code>: NotebookLM 페이지의 슬라이드 생성 다이얼로그에만 UI 버튼을 삽입하고 동작하기 위한 최소 권한입니다.</li>
+  </ul>
+
+  <h2>5. 데이터 판매 및 전송 금지</h2>
+  <ul>
+    <li>사용자 데이터를 제3자에 판매하거나 전송하지 않습니다.</li>
+    <li>확장 프로그램의 전용 목적과 관련 없는 용도로 사용자 데이터를 사용하지 않습니다.</li>
+    <li>신용도 판단 또는 대출 목적으로 사용자 데이터를 사용하지 않습니다.</li>
+  </ul>
+
+  <h2>6. 아동 개인정보 보호</h2>
+  <p>
+    본 확장 프로그램은 만 13세 미만 아동을 특별히 대상으로 하지 않으며, 아동으로부터 어떠한 개인정보도 수집하지 않습니다.
+  </p>
+
+  <h2>7. 정책 변경</h2>
+  <p>
+    본 처리방침이 변경될 경우 본 페이지의 업데이트 날짜가 갱신되며, 중요한 변경 사항은
+    Chrome 웹 스토어의 확장 프로그램 페이지를 통해 공지됩니다.
+  </p>
+
+  <h2>8. 면책 조항</h2>
+  <p>
+    본 확장 프로그램은 Google LLC, 각 기업(삼성, SK, LG, 현대자동차, 네이버, KB금융, 신한금융,
+    카카오, 하나금융, 우리금융, 롯데, 신세계 등)과 무관한 비공식 서드파티 도구입니다.
+    각 기업명/로고/스타일 지침은 식별 목적으로만 사용되며, 해당 기업의 소유입니다.
+  </p>
+
+  <h2>9. 문의</h2>
+  <p>
+    본 처리방침에 관한 문의는 아래 이메일로 연락해 주시기 바랍니다:<br>
+    <a href="mailto:kblife.ai@gmail.com">kblife.ai@gmail.com</a>
+  </p>
+
+  <footer>
+    © 2026 한국 기업 슬라이드 스타일. All rights reserved.
+  </footer>
+</body>
+</html>

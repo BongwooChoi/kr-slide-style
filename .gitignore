@@ -1,0 +1,22 @@
+# Claude Code local settings
+.claude/
+
+# KB 라이프 템플릿 (저작권 문서, 공개 저장소에 포함 금지)
+KB_template/
+
+# 배포용 ZIP (Releases로 별도 관리)
+*.zip
+
+# 임시 파일
+*.pyc
+__pycache__/
+_extracted/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 에디터
+.vscode/
+.idea/
