@@ -293,6 +293,30 @@ body {
   white-space: pre-wrap;
 }
 
+/* 면책 고지 — 항상 표시 */
+.disclaimer {
+  margin: 4px 0 8px;
+  padding: 8px 10px;
+  background: var(--kb-row-light);
+  border-left: 3px solid var(--kb-orange);
+  border-radius: 4px;
+}
+
+.disclaimer strong {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--kb-text);
+  margin-bottom: 2px;
+}
+
+.disclaimer p {
+  font-size: 9px;
+  color: var(--kb-dark-gray);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
 /* Footer — KB Brown(#776C61) 둥근 모서리 마커 재현 */
 .footer {
   text-align: right;

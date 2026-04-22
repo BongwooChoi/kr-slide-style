@@ -198,6 +198,15 @@ function buildDropdownHTML() {
       ">
         ${items}
       </div>
+      <div style="
+        padding: 8px 14px; background: #F2EEEA;
+        border-top: 1px solid #E5E5E5;
+        font-size: 10px; color: #545045; line-height: 1.4;
+        font-family: 'Malgun Gothic', sans-serif;
+      ">
+        <strong style="color: #000000; display:block; margin-bottom:2px;">⚠️ 비공식 서드파티 도구</strong>
+        언급된 기업과 제휴·승인 관계가 없으며, 상표는 식별 목적으로만 사용됩니다.
+      </div>
     </div>`;
 }
 

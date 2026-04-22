@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "한국 기업 슬라이드 스타일",
-  "version": "1.0.0",
-  "description": "NotebookLM 슬라이드 생성 시 한국 주요 기업의 스타일 지침을 자동 입력합니다.",
+  "version": "1.0.1",
+  "description": "[비공식] NotebookLM 슬라이드 생성 시 한국 주요 기업의 스타일 지침을 자동 입력합니다. 각 기업과 제휴 관계 없음.",
   "permissions": ["activeTab", "storage", "scripting"],
   "action": {
     "default_popup": "popup.html",
