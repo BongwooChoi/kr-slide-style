@@ -1,10 +1,16 @@
 # 한국 기업 슬라이드 스타일
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-설치하기-FFBC00?logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/%ED%95%9C%EA%B5%AD-%EA%B8%B0%EC%97%85-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC/lggomafojfhlcdebcaogemejmeibdked)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Privacy Policy](https://img.shields.io/badge/Privacy-Policy-F38530)](https://bongwoochoi.github.io/kr-slide-style/privacy-policy/)
+
 > **⚠️ 비공식 서드파티 도구 · Unofficial 3rd-party tool**
 > 본 확장은 언급된 어떠한 기업과도 제휴, 승인, 후원 관계가 없습니다.
 > 기업명과 스타일 설명은 오직 **식별 목적(nominative use)**으로만 사용됩니다.
 
 NotebookLM 슬라이드 생성 시 한국 주요 기업의 스타일 지침을 자동으로 입력해주는 Chrome/Edge 확장 프로그램입니다.
+
+👉 **[Chrome 웹 스토어에서 설치하기](https://chromewebstore.google.com/detail/%ED%95%9C%EA%B5%AD-%EA%B8%B0%EC%97%85-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC/lggomafojfhlcdebcaogemejmeibdked)**
 
 ## 주요 기능
 
@@ -18,10 +24,13 @@ NotebookLM 슬라이드 생성 시 한국 주요 기업의 스타일 지침을 �
 
 ## 설치 방법
 
-### 1. Chrome 웹 스토어 (예정)
-스토어 심사 통과 후 링크 제공 예정.
+### 1. Chrome 웹 스토어 (권장) ⭐
 
-### 2. 개발자 모드로 로드 (로컬)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-설치하기-FFBC00?logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/%ED%95%9C%EA%B5%AD-%EA%B8%B0%EC%97%85-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC/lggomafojfhlcdebcaogemejmeibdked)
+
+한 번의 클릭으로 설치 → "Chrome에 추가" 버튼 누르기
+
+### 2. 개발자 모드로 로드 (로컬 개발자용)
 1. 본 저장소 clone 또는 ZIP 다운로드
 2. Chrome/Edge에서 `chrome://extensions` 접속
 3. "개발자 모드" 켜기
