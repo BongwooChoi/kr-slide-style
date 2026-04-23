@@ -7,6 +7,9 @@ KB_template/
 # 배포용 ZIP (Releases로 별도 관리)
 *.zip
 
+# 스토어 등록 문구 초안 (로컬 참고용)
+STORE_LISTING_*.md
+
 # 임시 파일
 *.pyc
 __pycache__/
