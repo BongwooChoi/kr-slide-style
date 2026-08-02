@@ -93,8 +93,12 @@ document.getElementById('btnApply').addEventListener('click', async () => {
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-    if (!tab.url || !tab.url.includes('notebooklm.google.com')) {
-      showStatus('NotebookLM 페이지에서 사용해주세요.', 'error');
+    const isNotebookPage = tab.url && (
+      tab.url.includes('notebooklm.google.com') ||
+      tab.url.includes('notebook.google.com')
+    );
+    if (!isNotebookPage) {
+      showStatus('NotebookLM(Gemini Notebook) 페이지에서 사용해주세요.', 'error');
       return;
     }
 
